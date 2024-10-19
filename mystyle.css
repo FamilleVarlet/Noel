@@ -34,7 +34,7 @@ ul {
 li {
     display: flex;
     justify-content: flex-start; /* Aligne le texte et les images à gauche dans chaque ligne */
-    align-items: center;
+    align-items: center; /* Centre verticalement le texte par rapport à l'image */
     background-color: rgba(255, 255, 255, 0.8); /* Transparence blanche */
     margin: 10px 0;
     padding: 10px;
@@ -48,6 +48,14 @@ li img {
     width: 50px; /* Taille uniforme des images */
     height: 50px;
     object-fit: cover;
+}
+
+/* Style des liens */
+li a {
+    color: #006400; /* Changer la couleur du texte en vert */
+    text-decoration: none; /* Supprimer le soulignement */
+    display: flex; /* Utiliser flex pour centrer verticalement */
+    align-items: center; /* Centrer le texte et l'image verticalement */
 }
 
 /* Style des titres */
