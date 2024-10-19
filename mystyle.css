@@ -1,0 +1,77 @@
+/* Général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    background-image: url('background-noel.jpg'); /* Image de fond festive */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; /* Aligne le contenu vers la droite */
+}
+
+/* Conteneur principal pour le contenu */
+main {
+    width: 100%;
+    max-width: 600px; /* Largeur maximale de la "carte" */
+    margin-right: 20px; /* Espace sur le côté droit */
+    padding: 20px;
+    border: 5px solid #006400; /* Bordure verte de Noël */
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9); /* Légère transparence blanche */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3); /* Ombre pour profondeur */
+}
+
+/* Liste des idées cadeaux */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Texte aligné à gauche dans la carte */
+}
+
+li {
+    display: flex;
+    justify-content: flex-start; /* Aligne le texte et les images à gauche dans chaque ligne */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparence blanche */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des images */
+li img {
+    margin-left: 10px; /* Espace entre le texte et l'image */
+    width: 50px; /* Taille uniforme des images */
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Style des titres */
+.li3 {
+    font-size: 1.8em;
+    color: #b22222;
+    text-align: left; /* Aligne les titres à gauche */
+}
+
+/* Media queries pour rendre le design responsive */
+@media (max-width: 768px) {
+    main {
+        max-width: 100%; /* Prend toute la largeur de l'écran sur mobile */
+        margin-right: 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    li img {
+        width: 40px; /* Réduit la taille des images sur mobile */
+        height: 40px;
+    }
+
+    .li3 {
+        font-size: 1.5em; /* Réduit la taille des titres sur mobile */
+    }
+}
